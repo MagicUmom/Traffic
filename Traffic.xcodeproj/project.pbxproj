@@ -15,6 +15,8 @@
 		70AFDED71DAE7DF00084FCAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70AFDED51DAE7DF00084FCAF /* LaunchScreen.storyboard */; };
 		70AFDEE21DAE7DF00084FCAF /* TrafficTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AFDEE11DAE7DF00084FCAF /* TrafficTests.m */; };
 		70AFDEED1DAE7DF00084FCAF /* TrafficUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AFDEEC1DAE7DF00084FCAF /* TrafficUITests.m */; };
+		70AFDEFB1DAE80870084FCAF /* pictures in Resources */ = {isa = PBXBuildFile; fileRef = 70AFDEFA1DAE80870084FCAF /* pictures */; };
+		70AFDEFE1DAE84FC0084FCAF /* mapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AFDEFD1DAE84FC0084FCAF /* mapViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		70AFDEE81DAE7DF00084FCAF /* TrafficUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrafficUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		70AFDEEC1DAE7DF00084FCAF /* TrafficUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrafficUITests.m; sourceTree = "<group>"; };
 		70AFDEEE1DAE7DF00084FCAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70AFDEFA1DAE80870084FCAF /* pictures */ = {isa = PBXFileReference; lastKnownFileType = folder; path = pictures; sourceTree = SOURCE_ROOT; };
+		70AFDEFC1DAE84FC0084FCAF /* mapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mapViewController.h; sourceTree = "<group>"; };
+		70AFDEFD1DAE84FC0084FCAF /* mapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mapViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +106,8 @@
 		70AFDEC61DAE7DF00084FCAF /* Traffic */ = {
 			isa = PBXGroup;
 			children = (
+				70AFDEFC1DAE84FC0084FCAF /* mapViewController.h */,
+				70AFDEFD1DAE84FC0084FCAF /* mapViewController.m */,
 				70AFDECA1DAE7DF00084FCAF /* AppDelegate.h */,
 				70AFDECB1DAE7DF00084FCAF /* AppDelegate.m */,
 				70AFDECD1DAE7DF00084FCAF /* ViewController.h */,
@@ -117,6 +124,7 @@
 		70AFDEC71DAE7DF00084FCAF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				70AFDEFA1DAE80870084FCAF /* pictures */,
 				70AFDEC81DAE7DF00084FCAF /* main.m */,
 			);
 			name = "Supporting Files";
@@ -252,6 +260,7 @@
 				70AFDED71DAE7DF00084FCAF /* LaunchScreen.storyboard in Resources */,
 				70AFDED41DAE7DF00084FCAF /* Assets.xcassets in Resources */,
 				70AFDED21DAE7DF00084FCAF /* Main.storyboard in Resources */,
+				70AFDEFB1DAE80870084FCAF /* pictures in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +288,7 @@
 				70AFDECF1DAE7DF00084FCAF /* ViewController.m in Sources */,
 				70AFDECC1DAE7DF00084FCAF /* AppDelegate.m in Sources */,
 				70AFDEC91DAE7DF00084FCAF /* main.m in Sources */,
+				70AFDEFE1DAE84FC0084FCAF /* mapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,9 +439,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XW3GGB6ENP;
 				INFOPLIST_FILE = Traffic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MCLAB.Traffic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -441,9 +453,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XW3GGB6ENP;
 				INFOPLIST_FILE = Traffic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MCLAB.Traffic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -516,6 +530,7 @@
 				70AFDEF31DAE7DF00084FCAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		70AFDEF41DAE7DF00084FCAF /* Build configuration list for PBXNativeTarget "TrafficTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +539,7 @@
 				70AFDEF61DAE7DF00084FCAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		70AFDEF71DAE7DF00084FCAF /* Build configuration list for PBXNativeTarget "TrafficUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +548,7 @@
 				70AFDEF91DAE7DF00084FCAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

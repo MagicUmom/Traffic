@@ -9,13 +9,16 @@
 #import "mapViewController.h"
 
 @interface mapViewController ()
-
+{
+    NSUInteger i;
+}
 @end
 
 @implementation mapViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    i = 0;
     // Do any additional setup after loading the view.
 }
 
@@ -34,4 +37,39 @@
 }
 */
 
+- (IBAction)btn_action_change:(id)sender
+{
+    i++;
+    int j;
+    for (j=1; j<30 ; j++)
+    {
+        UIImageView *tmpImage = (UIImageView *)[self.UIView_forMap viewWithTag:300 +j];
+        
+        switch (i%4)
+        {
+            case 0:
+                [tmpImage setImage:[UIImage imageNamed:[NSString stringWithFormat: @"%d-G.png",j]]];
+                break;
+            case 1:
+                [tmpImage setImage:[UIImage imageNamed:[NSString stringWithFormat: @"%d-O.png",j]]];
+                break;
+
+            case 2:
+                [tmpImage setImage:[UIImage imageNamed:[NSString stringWithFormat: @"%d-Y.png",j]]];
+                break;
+
+            case 3:
+                [tmpImage setImage:[UIImage imageNamed:[NSString stringWithFormat: @"%d-R.png",j]]];
+                break;
+
+            
+            default:
+                break;
+        }
+       // NSLog(@"%@",[NSString stringWithFormat: @"%d-G.png",j]);
+    }
+    
+    
+    NSLog(@"btn clicked");
+}
 @end
