@@ -17,6 +17,7 @@
 		70AFDEED1DAE7DF00084FCAF /* TrafficUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AFDEEC1DAE7DF00084FCAF /* TrafficUITests.m */; };
 		70AFDEFB1DAE80870084FCAF /* pictures in Resources */ = {isa = PBXBuildFile; fileRef = 70AFDEFA1DAE80870084FCAF /* pictures */; };
 		70AFDEFE1DAE84FC0084FCAF /* mapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AFDEFD1DAE84FC0084FCAF /* mapViewController.m */; };
+		70AFDF001DAEA1C70084FCAF /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 70AFDEFF1DAEA1C70084FCAF /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		70AFDEFA1DAE80870084FCAF /* pictures */ = {isa = PBXFileReference; lastKnownFileType = folder; path = pictures; sourceTree = SOURCE_ROOT; };
 		70AFDEFC1DAE84FC0084FCAF /* mapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mapViewController.h; sourceTree = "<group>"; };
 		70AFDEFD1DAE84FC0084FCAF /* mapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mapViewController.m; sourceTree = "<group>"; };
+		70AFDEFF1DAEA1C70084FCAF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 		70AFDEBB1DAE7DF00084FCAF = {
 			isa = PBXGroup;
 			children = (
+				70AFDEFF1DAEA1C70084FCAF /* README.md */,
 				70AFDEC61DAE7DF00084FCAF /* Traffic */,
 				70AFDEE01DAE7DF00084FCAF /* TrafficTests */,
 				70AFDEEB1DAE7DF00084FCAF /* TrafficUITests */,
@@ -287,6 +290,7 @@
 			files = (
 				70AFDECF1DAE7DF00084FCAF /* ViewController.m in Sources */,
 				70AFDECC1DAE7DF00084FCAF /* AppDelegate.m in Sources */,
+				70AFDF001DAEA1C70084FCAF /* README.md in Sources */,
 				70AFDEC91DAE7DF00084FCAF /* main.m in Sources */,
 				70AFDEFE1DAE84FC0084FCAF /* mapViewController.m in Sources */,
 			);

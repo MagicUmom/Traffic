@@ -17,13 +17,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0v-ZV-I0s">
-                                <frame key="frameInset" minX="164" minY="318" width="46" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="main_background" translatesAutoresizingMaskIntoConstraints="NO" id="MX6-Jz-wNS">
+                                <frame key="frameInset" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="nLT-gO-OjT" kind="show" id="gbU-PR-6qL"/>
-                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MWl-EO-CQc">
+                                <frame key="frameInset" minX="222" minY="203" width="128" height="111"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="init_1"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fna-ts-DAr">
+                                <frame key="frameInset" minX="216" minY="319" width="134" height="125"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="init_2"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -32,7 +38,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="78" y="123"/>
+            <point key="canvasLocation" x="77.599999999999994" y="122.78860569715144"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="rlh-V2-WqG">
@@ -223,6 +229,9 @@
         <image name="7-G" width="49" height="49"/>
         <image name="8-G" width="44" height="58"/>
         <image name="9-G" width="35" height="35"/>
+        <image name="init_1" width="239" height="207"/>
+        <image name="init_2" width="239" height="207"/>
+        <image name="main_background" width="640" height="1086"/>
         <image name="main_map" width="633" height="674"/>
     </resources>
 </document>
