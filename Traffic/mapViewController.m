@@ -46,6 +46,23 @@
     NSLog(@"btn clicked");
 }
 
+- (IBAction)btn_back:(id)sender
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (IBAction)btn_goSouth:(id)sender
+{
+    [self updateColor];
+
+}
+
+- (IBAction)btn_goNorth:(id)sender
+{
+    [self updateColor];
+
+}
+
 - (void) updateColor
 {
 

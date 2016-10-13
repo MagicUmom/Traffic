@@ -18,6 +18,7 @@
 		70AFDEFB1DAE80870084FCAF /* pictures in Resources */ = {isa = PBXBuildFile; fileRef = 70AFDEFA1DAE80870084FCAF /* pictures */; };
 		70AFDEFE1DAE84FC0084FCAF /* mapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AFDEFD1DAE84FC0084FCAF /* mapViewController.m */; };
 		70AFDF001DAEA1C70084FCAF /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 70AFDEFF1DAEA1C70084FCAF /* README.md */; };
+		70AFDF031DAF4D750084FCAF /* RoutingPlanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AFDF021DAF4D750084FCAF /* RoutingPlanViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		70AFDEFC1DAE84FC0084FCAF /* mapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mapViewController.h; sourceTree = "<group>"; };
 		70AFDEFD1DAE84FC0084FCAF /* mapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mapViewController.m; sourceTree = "<group>"; };
 		70AFDEFF1DAEA1C70084FCAF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		70AFDF011DAF4D750084FCAF /* RoutingPlanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoutingPlanViewController.h; sourceTree = "<group>"; };
+		70AFDF021DAF4D750084FCAF /* RoutingPlanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoutingPlanViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,8 @@
 		70AFDEC61DAE7DF00084FCAF /* Traffic */ = {
 			isa = PBXGroup;
 			children = (
+				70AFDF011DAF4D750084FCAF /* RoutingPlanViewController.h */,
+				70AFDF021DAF4D750084FCAF /* RoutingPlanViewController.m */,
 				70AFDEFC1DAE84FC0084FCAF /* mapViewController.h */,
 				70AFDEFD1DAE84FC0084FCAF /* mapViewController.m */,
 				70AFDECA1DAE7DF00084FCAF /* AppDelegate.h */,
@@ -292,6 +297,7 @@
 				70AFDECC1DAE7DF00084FCAF /* AppDelegate.m in Sources */,
 				70AFDF001DAEA1C70084FCAF /* README.md in Sources */,
 				70AFDEC91DAE7DF00084FCAF /* main.m in Sources */,
+				70AFDF031DAF4D750084FCAF /* RoutingPlanViewController.m in Sources */,
 				70AFDEFE1DAE84FC0084FCAF /* mapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

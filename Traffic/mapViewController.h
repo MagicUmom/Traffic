@@ -11,6 +11,9 @@
 @interface mapViewController : UIViewController
 - (IBAction)btn_action_change:(id)sender;
 @property (weak, nonatomic) IBOutlet UIView *UIView_forMap;
+- (IBAction)btn_back:(id)sender;
+- (IBAction)btn_goSouth:(id)sender;
 
+- (IBAction)btn_goNorth:(id)sender;
 -(void) updateColor;
 @end
