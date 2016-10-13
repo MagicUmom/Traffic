@@ -204,18 +204,10 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sSe-FV-J0N">
-                                <frame key="frameInset" minX="189" minY="93" width="115" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6g4-93-LUC">
+                                <frame key="frameInset" minX="2" minY="75" width="157" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="南下(往宜蘭)"/>
-                                <connections>
-                                    <action selector="btn_goSouth:" destination="nLT-gO-OjT" eventType="touchUpInside" id="qhj-nq-8Lf"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6g4-93-LUC">
-                                <frame key="frameInset" minX="16" minY="82" width="105" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="北上(往台北)"/>
+                                <state key="normal" title="北上(往台北)" image="btn_goN"/>
                                 <connections>
                                     <action selector="btn_goNorth:" destination="nLT-gO-OjT" eventType="touchUpInside" id="rMI-Iu-W8t"/>
                                 </connections>
@@ -243,6 +235,18 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.079241193830966949" green="0.7891802191734314" blue="0.65426164865493774" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sSe-FV-J0N">
+                                <frame key="frameInset" minX="161" minY="76" width="157" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="南下(往宜蘭)" image="btn_goS"/>
+                                <connections>
+                                    <action selector="btn_goSouth:" destination="nLT-gO-OjT" eventType="touchUpInside" id="qhj-nq-8Lf"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rule" translatesAutoresizingMaskIntoConstraints="NO" id="0ru-my-hy3">
+                                <frame key="frameInset" minY="505" width="320" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -303,6 +307,8 @@
         <image name="7-G" width="49" height="49"/>
         <image name="8-G" width="44" height="58"/>
         <image name="9-G" width="35" height="35"/>
+        <image name="btn_goN" width="321" height="69"/>
+        <image name="btn_goS" width="317" height="66"/>
         <image name="init_1" width="120" height="165"/>
         <image name="init_2" width="130" height="157"/>
         <image name="init_3" width="122" height="156"/>
@@ -311,5 +317,6 @@
         <image name="init_6" width="118" height="144"/>
         <image name="main_background" width="640" height="1085"/>
         <image name="main_map" width="633" height="674"/>
+        <image name="rule" width="640" height="137"/>
     </resources>
 </document>
