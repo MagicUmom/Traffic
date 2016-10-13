@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28F5CDBC1DAFD86E00851B9E /* routingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F5CDBA1DAFD86E00851B9E /* routingTableViewCell.m */; };
+		28F5CDBD1DAFD86E00851B9E /* routingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F5CDBB1DAFD86E00851B9E /* routingTableViewCell.xib */; };
 		70AFDEC91DAE7DF00084FCAF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AFDEC81DAE7DF00084FCAF /* main.m */; };
 		70AFDECC1DAE7DF00084FCAF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AFDECB1DAE7DF00084FCAF /* AppDelegate.m */; };
 		70AFDECF1DAE7DF00084FCAF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AFDECE1DAE7DF00084FCAF /* ViewController.m */; };
@@ -39,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		28F5CDB91DAFD86E00851B9E /* routingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = routingTableViewCell.h; sourceTree = "<group>"; };
+		28F5CDBA1DAFD86E00851B9E /* routingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = routingTableViewCell.m; sourceTree = "<group>"; };
+		28F5CDBB1DAFD86E00851B9E /* routingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = routingTableViewCell.xib; sourceTree = "<group>"; };
 		70AFDEC41DAE7DF00084FCAF /* Traffic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Traffic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70AFDEC81DAE7DF00084FCAF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		70AFDECA1DAE7DF00084FCAF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -125,6 +130,9 @@
 				70AFDED51DAE7DF00084FCAF /* LaunchScreen.storyboard */,
 				70AFDED81DAE7DF00084FCAF /* Info.plist */,
 				70AFDEC71DAE7DF00084FCAF /* Supporting Files */,
+				28F5CDB91DAFD86E00851B9E /* routingTableViewCell.h */,
+				28F5CDBA1DAFD86E00851B9E /* routingTableViewCell.m */,
+				28F5CDBB1DAFD86E00851B9E /* routingTableViewCell.xib */,
 			);
 			path = Traffic;
 			sourceTree = "<group>";
@@ -265,6 +273,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28F5CDBD1DAFD86E00851B9E /* routingTableViewCell.xib in Resources */,
 				70AFDED71DAE7DF00084FCAF /* LaunchScreen.storyboard in Resources */,
 				70AFDED41DAE7DF00084FCAF /* Assets.xcassets in Resources */,
 				70AFDED21DAE7DF00084FCAF /* Main.storyboard in Resources */,
@@ -295,6 +304,7 @@
 			files = (
 				70AFDECF1DAE7DF00084FCAF /* ViewController.m in Sources */,
 				70AFDECC1DAE7DF00084FCAF /* AppDelegate.m in Sources */,
+				28F5CDBC1DAFD86E00851B9E /* routingTableViewCell.m in Sources */,
 				70AFDF001DAEA1C70084FCAF /* README.md in Sources */,
 				70AFDEC91DAE7DF00084FCAF /* main.m in Sources */,
 				70AFDF031DAF4D750084FCAF /* RoutingPlanViewController.m in Sources */,

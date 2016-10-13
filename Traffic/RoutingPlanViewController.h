@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "routingTableViewCell.h"
 
-@interface RoutingPlanViewController : UIViewController
+@interface RoutingPlanViewController : UIViewController <UITableViewDelegate,UITableViewDataSource>
+- (IBAction)btn_goBack:(id)sender;
+@property (weak, nonatomic) IBOutlet UITableView *routingTableView;
+- (IBAction)btn_routing_goN:(id)sender;
+- (IBAction)btn_routing_goS:(id)sender;
 
 @end

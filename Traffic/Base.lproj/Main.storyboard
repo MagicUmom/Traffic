@@ -204,14 +204,10 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6g4-93-LUC">
-                                <frame key="frameInset" minX="2" minY="75" width="157" height="63"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rule" translatesAutoresizingMaskIntoConstraints="NO" id="0ru-my-hy3">
+                                <frame key="frameInset" minY="505" width="320" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="北上(往台北)" image="btn_goN"/>
-                                <connections>
-                                    <action selector="btn_goNorth:" destination="nLT-gO-OjT" eventType="touchUpInside" id="rMI-Iu-W8t"/>
-                                </connections>
-                            </button>
+                            </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nxf-8I-0ZP">
                                 <frame key="frameInset" width="320" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -243,10 +239,14 @@
                                     <action selector="btn_goSouth:" destination="nLT-gO-OjT" eventType="touchUpInside" id="qhj-nq-8Lf"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rule" translatesAutoresizingMaskIntoConstraints="NO" id="0ru-my-hy3">
-                                <frame key="frameInset" minY="505" width="320" height="63"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6g4-93-LUC">
+                                <frame key="frameInset" minX="2" minY="75" width="157" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <state key="normal" title="北上(往台北)" image="btn_goN"/>
+                                <connections>
+                                    <action selector="btn_goNorth:" destination="nLT-gO-OjT" eventType="touchUpInside" id="rMI-Iu-W8t"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -269,12 +269,64 @@
                     <view key="view" contentMode="scaleToFill" id="9yz-hP-5vV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="blC-Nf-cSH">
+                                <frame key="frameInset" width="320" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="路線規劃" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vS7-L8-eci">
+                                        <frame key="frameInset" minX="87" minY="17" width="146" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uii-eR-z6n">
+                                        <frame key="frameInset" minX="8" minY="22" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" red="0.040968820449999999" green="0.01655149832" blue="0.050831459459999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="&lt;返回"/>
+                                        <connections>
+                                            <action selector="btn_back:" destination="nLT-gO-OjT" eventType="touchUpInside" id="pCP-By-AQQ"/>
+                                            <action selector="btn_goBack:" destination="8Vi-6P-XLU" eventType="touchUpInside" id="OTa-mq-xVd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.079241193830000001" green="0.78918021920000003" blue="0.65426164870000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eGR-8j-lJg">
+                                <frame key="frameInset" minX="161" minY="75" width="157" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="南下(往宜蘭)" image="btn_goS"/>
+                                <connections>
+                                    <action selector="btn_goSouth:" destination="nLT-gO-OjT" eventType="touchUpInside" id="OMG-jC-aud"/>
+                                    <action selector="btn_routing_goS:" destination="8Vi-6P-XLU" eventType="touchUpInside" id="Cce-hR-2ca"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMj-V9-fsh">
+                                <frame key="frameInset" minX="2" minY="74" width="157" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="北上(往台北)" image="btn_goN"/>
+                                <connections>
+                                    <action selector="btn_goNorth:" destination="nLT-gO-OjT" eventType="touchUpInside" id="dBC-jy-Zeu"/>
+                                    <action selector="btn_routing_goN:" destination="8Vi-6P-XLU" eventType="touchUpInside" id="W6M-cU-2PE"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7H3-PO-Zyd">
+                                <frame key="frameInset" minY="180" width="320" height="388"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="routingTableView" destination="7H3-PO-Zyd" id="EZY-es-j9A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nf0-5S-6HS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="962" y="677"/>
+            <point key="canvasLocation" x="961.875" y="676.05633802816897"/>
         </scene>
     </scenes>
     <resources>
