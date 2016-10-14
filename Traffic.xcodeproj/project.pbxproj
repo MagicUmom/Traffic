@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		28F5CDBC1DAFD86E00851B9E /* routingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F5CDBA1DAFD86E00851B9E /* routingTableViewCell.m */; };
 		28F5CDBD1DAFD86E00851B9E /* routingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F5CDBB1DAFD86E00851B9E /* routingTableViewCell.xib */; };
+		707403F61DB0990000715E3E /* PublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 707403F51DB0990000715E3E /* PublishViewController.m */; };
+		707403FD1DB09DCA00715E3E /* publishCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 707403FB1DB09DCA00715E3E /* publishCell.m */; };
+		707403FE1DB09DCA00715E3E /* publishCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 707403FC1DB09DCA00715E3E /* publishCell.xib */; };
+		707404041DB0B1AD00715E3E /* orderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 707404031DB0B1AD00715E3E /* orderViewController.m */; };
+		707404071DB0B47500715E3E /* orderRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 707404061DB0B47500715E3E /* orderRecordViewController.m */; };
 		70AFDEC91DAE7DF00084FCAF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AFDEC81DAE7DF00084FCAF /* main.m */; };
 		70AFDECC1DAE7DF00084FCAF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AFDECB1DAE7DF00084FCAF /* AppDelegate.m */; };
 		70AFDECF1DAE7DF00084FCAF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AFDECE1DAE7DF00084FCAF /* ViewController.m */; };
@@ -44,6 +49,15 @@
 		28F5CDB91DAFD86E00851B9E /* routingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = routingTableViewCell.h; sourceTree = "<group>"; };
 		28F5CDBA1DAFD86E00851B9E /* routingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = routingTableViewCell.m; sourceTree = "<group>"; };
 		28F5CDBB1DAFD86E00851B9E /* routingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = routingTableViewCell.xib; sourceTree = "<group>"; };
+		707403F41DB0990000715E3E /* PublishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublishViewController.h; sourceTree = "<group>"; };
+		707403F51DB0990000715E3E /* PublishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublishViewController.m; sourceTree = "<group>"; };
+		707403FA1DB09DCA00715E3E /* publishCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = publishCell.h; sourceTree = "<group>"; };
+		707403FB1DB09DCA00715E3E /* publishCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = publishCell.m; sourceTree = "<group>"; };
+		707403FC1DB09DCA00715E3E /* publishCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = publishCell.xib; sourceTree = "<group>"; };
+		707404021DB0B1AD00715E3E /* orderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = orderViewController.h; sourceTree = "<group>"; };
+		707404031DB0B1AD00715E3E /* orderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = orderViewController.m; sourceTree = "<group>"; };
+		707404051DB0B47500715E3E /* orderRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = orderRecordViewController.h; sourceTree = "<group>"; };
+		707404061DB0B47500715E3E /* orderRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = orderRecordViewController.m; sourceTree = "<group>"; };
 		70AFDEC41DAE7DF00084FCAF /* Traffic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Traffic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70AFDEC81DAE7DF00084FCAF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		70AFDECA1DAE7DF00084FCAF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -117,6 +131,12 @@
 		70AFDEC61DAE7DF00084FCAF /* Traffic */ = {
 			isa = PBXGroup;
 			children = (
+				707404051DB0B47500715E3E /* orderRecordViewController.h */,
+				707404061DB0B47500715E3E /* orderRecordViewController.m */,
+				707404021DB0B1AD00715E3E /* orderViewController.h */,
+				707404031DB0B1AD00715E3E /* orderViewController.m */,
+				707403F41DB0990000715E3E /* PublishViewController.h */,
+				707403F51DB0990000715E3E /* PublishViewController.m */,
 				70AFDF011DAF4D750084FCAF /* RoutingPlanViewController.h */,
 				70AFDF021DAF4D750084FCAF /* RoutingPlanViewController.m */,
 				70AFDEFC1DAE84FC0084FCAF /* mapViewController.h */,
@@ -133,6 +153,9 @@
 				28F5CDB91DAFD86E00851B9E /* routingTableViewCell.h */,
 				28F5CDBA1DAFD86E00851B9E /* routingTableViewCell.m */,
 				28F5CDBB1DAFD86E00851B9E /* routingTableViewCell.xib */,
+				707403FA1DB09DCA00715E3E /* publishCell.h */,
+				707403FB1DB09DCA00715E3E /* publishCell.m */,
+				707403FC1DB09DCA00715E3E /* publishCell.xib */,
 			);
 			path = Traffic;
 			sourceTree = "<group>";
@@ -274,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28F5CDBD1DAFD86E00851B9E /* routingTableViewCell.xib in Resources */,
+				707403FE1DB09DCA00715E3E /* publishCell.xib in Resources */,
 				70AFDED71DAE7DF00084FCAF /* LaunchScreen.storyboard in Resources */,
 				70AFDED41DAE7DF00084FCAF /* Assets.xcassets in Resources */,
 				70AFDED21DAE7DF00084FCAF /* Main.storyboard in Resources */,
@@ -302,12 +326,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				707403F61DB0990000715E3E /* PublishViewController.m in Sources */,
 				70AFDECF1DAE7DF00084FCAF /* ViewController.m in Sources */,
 				70AFDECC1DAE7DF00084FCAF /* AppDelegate.m in Sources */,
+				707404041DB0B1AD00715E3E /* orderViewController.m in Sources */,
 				28F5CDBC1DAFD86E00851B9E /* routingTableViewCell.m in Sources */,
 				70AFDF001DAEA1C70084FCAF /* README.md in Sources */,
 				70AFDEC91DAE7DF00084FCAF /* main.m in Sources */,
+				707404071DB0B47500715E3E /* orderRecordViewController.m in Sources */,
 				70AFDF031DAF4D750084FCAF /* RoutingPlanViewController.m in Sources */,
+				707403FD1DB09DCA00715E3E /* publishCell.m in Sources */,
 				70AFDEFE1DAE84FC0084FCAF /* mapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
