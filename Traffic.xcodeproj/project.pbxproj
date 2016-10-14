@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		701F126E1DAF7F4400F908E8 /* PublicTrfficViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 701F126D1DAF7F4400F908E8 /* PublicTrfficViewController.m */; };
 		70AFDEC91DAE7DF00084FCAF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AFDEC81DAE7DF00084FCAF /* main.m */; };
 		70AFDECC1DAE7DF00084FCAF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AFDECB1DAE7DF00084FCAF /* AppDelegate.m */; };
 		70AFDECF1DAE7DF00084FCAF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70AFDECE1DAE7DF00084FCAF /* ViewController.m */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		701F126C1DAF7F4400F908E8 /* PublicTrfficViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicTrfficViewController.h; sourceTree = "<group>"; };
+		701F126D1DAF7F4400F908E8 /* PublicTrfficViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicTrfficViewController.m; sourceTree = "<group>"; };
 		70AFDEC41DAE7DF00084FCAF /* Traffic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Traffic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70AFDEC81DAE7DF00084FCAF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		70AFDECA1DAE7DF00084FCAF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -112,6 +115,8 @@
 		70AFDEC61DAE7DF00084FCAF /* Traffic */ = {
 			isa = PBXGroup;
 			children = (
+				701F126C1DAF7F4400F908E8 /* PublicTrfficViewController.h */,
+				701F126D1DAF7F4400F908E8 /* PublicTrfficViewController.m */,
 				70AFDF011DAF4D750084FCAF /* RoutingPlanViewController.h */,
 				70AFDF021DAF4D750084FCAF /* RoutingPlanViewController.m */,
 				70AFDEFC1DAE84FC0084FCAF /* mapViewController.h */,
@@ -223,7 +228,6 @@
 				TargetAttributes = {
 					70AFDEC31DAE7DF00084FCAF = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = XW3GGB6ENP;
 						ProvisioningStyle = Automatic;
 					};
 					70AFDEDC1DAE7DF00084FCAF = {
@@ -293,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				701F126E1DAF7F4400F908E8 /* PublicTrfficViewController.m in Sources */,
 				70AFDECF1DAE7DF00084FCAF /* ViewController.m in Sources */,
 				70AFDECC1DAE7DF00084FCAF /* AppDelegate.m in Sources */,
 				70AFDF001DAEA1C70084FCAF /* README.md in Sources */,
@@ -447,9 +452,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = XW3GGB6ENP;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Traffic/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MCLAB.Traffic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -461,9 +467,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = XW3GGB6ENP;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Traffic/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MCLAB.Traffic;
 				PRODUCT_NAME = "$(TARGET_NAME)";

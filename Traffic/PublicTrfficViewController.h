@@ -1,5 +1,5 @@
 //
-//  RoutingPlanViewController.h
+//  PublicTrfficViewController.h
 //  Traffic
 //
 //  Created by MCLAB on 2016/10/13.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RoutingPlanViewController : UIViewController
-- (IBAction)btn_goBack:(id)sender;
+@interface PublicTrfficViewController : UIViewController
+- (IBAction)btn_lastPage:(id)sender;
 
 @end

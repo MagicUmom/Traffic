@@ -1,18 +1,18 @@
 //
-//  RoutingPlanViewController.m
+//  PublicTrfficViewController.m
 //  Traffic
 //
 //  Created by MCLAB on 2016/10/13.
 //  Copyright © 2016年 MCLAB. All rights reserved.
 //
 
-#import "RoutingPlanViewController.h"
+#import "PublicTrfficViewController.h"
 
-@interface RoutingPlanViewController ()
+@interface PublicTrfficViewController ()
 
 @end
 
-@implementation RoutingPlanViewController
+@implementation PublicTrfficViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -34,9 +34,8 @@
 }
 */
 
-- (IBAction)btn_goBack:(id)sender
+- (IBAction)btn_lastPage:(id)sender
 {
     [self dismissViewControllerAnimated:YES completion:nil];
-
 }
 @end
