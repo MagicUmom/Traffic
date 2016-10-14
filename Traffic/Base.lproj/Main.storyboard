@@ -13,7 +13,7 @@
                         <viewControllerLayoutGuide type="top" id="EKU-Cu-lSF"/>
                         <viewControllerLayoutGuide type="bottom" id="QI9-ul-pgR"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Nao-iQ-CCb" customClass="resTableViewCell">
+                    <view key="view" contentMode="scaleToFill" id="Nao-iQ-CCb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
