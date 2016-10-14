@@ -15,4 +15,7 @@
 - (IBAction)btn_routing_goN:(id)sender;
 - (IBAction)btn_routing_goS:(id)sender;
 
+@property (strong, nonatomic) NSMutableArray *myArr_N;
+@property (strong, nonatomic) NSMutableArray *myArr_S;
+
 @end

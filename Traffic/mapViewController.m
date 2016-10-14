@@ -11,6 +11,7 @@
 @interface mapViewController ()
 {
     NSUInteger i;
+    BOOL loadFromAPI ;
 }
 @end
 
@@ -19,7 +20,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     i = 0;
-    [self updateColor];
+
+    
+    NSError *error;
+    NSString *url_string = [NSString stringWithFormat: @"http://210.65.139.94/api/getTravelTime.php"];
+    NSData *data = [NSData dataWithContentsOfURL: [NSURL URLWithString:url_string]];
+    NSMutableArray *jsonArr = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+    _myArr_N = jsonArr;
+    
+    NSString *url_string2 = [NSString stringWithFormat: @"http://210.65.139.94/api/getTravelTime2.php"];
+    NSData *data2 = [NSData dataWithContentsOfURL: [NSURL URLWithString:url_string2]];
+    NSMutableArray *jsonArr2 = [NSJSONSerialization JSONObjectWithData:data2 options:kNilOptions error:&error];
+    _myArr_S = jsonArr2;
+
+    loadFromAPI = YES;
+    [self updateColor:YES];
 
     // Do any additional setup after loading the view.
 }
@@ -39,12 +54,6 @@
 }
 */
 
-- (IBAction)btn_action_change:(id)sender
-{
-    //i++;
-    [self updateColor];
-    NSLog(@"btn clicked");
-}
 
 - (IBAction)btn_back:(id)sender
 {
@@ -53,47 +62,134 @@
 
 - (IBAction)btn_goSouth:(id)sender
 {
-    [self updateColor];
+    [self updateColor:NO];
 
 }
 
 - (IBAction)btn_goNorth:(id)sender
 {
-    [self updateColor];
+    [self updateColor:YES];
 
 }
 
-- (void) updateColor
+- (void) updateColor : (BOOL) goNorth
 {
 
-    int j;
-    for (j=1; j<30 ; j++)
+    if(loadFromAPI)
     {
-        UIImageView *tmpImage = (UIImageView *)[self.UIView_forMap viewWithTag:300 +j];
-        switch ((int)arc4random()%4)
+        NSLog(@"loadFromAPI");
+        if(goNorth)
         {
-            case 0:
-                [tmpImage setImage:[UIImage imageNamed:[NSString stringWithFormat: @"%d-G.png",j]]];
-                break;
-            case 1:
-                [tmpImage setImage:[UIImage imageNamed:[NSString stringWithFormat: @"%d-O.png",j]]];
-                break;
+            for (NSMutableDictionary *tempArr in _myArr_N)
+            {
+                int roadNum = [[tempArr objectForKey:@"RoadNo"]intValue ];
+                int speed = [[tempArr objectForKey:@"Speed"] intValue];
+                UIImageView *tmpImage = (UIImageView *)[self.UIView_forMap viewWithTag:300 +roadNum];
                 
-            case 2:
-                [tmpImage setImage:[UIImage imageNamed:[NSString stringWithFormat: @"%d-Y.png",j]]];
-                break;
+                int flag=0;
+                if(speed<40)    flag =3;
+                else if (speed <60) flag =2;
+                else if (speed <80) flag =1;
+                else flag =0;
                 
-            case 3:
-                [tmpImage setImage:[UIImage imageNamed:[NSString stringWithFormat: @"%d-R.png",j]]];
-                break;
+                switch (flag)
+                {
+                    case 0:
+                        [tmpImage setImage:[UIImage imageNamed:[NSString stringWithFormat: @"%d-G.png",roadNum]]];
+                        break;
+                    case 1:
+                        [tmpImage setImage:[UIImage imageNamed:[NSString stringWithFormat: @"%d-O.png",roadNum]]];
+                        break;
+                        
+                    case 2:
+                        [tmpImage setImage:[UIImage imageNamed:[NSString stringWithFormat: @"%d-Y.png",roadNum]]];
+                        break;
+                        
+                    case 3:
+                        [tmpImage setImage:[UIImage imageNamed:[NSString stringWithFormat: @"%d-R.png",roadNum]]];
+                        break;
+                        
+                        
+                    default:
+                        break;
+                }
+            }
                 
-                
-            default:
-                break;
-        }
-        // NSLog(@"%@",[NSString stringWithFormat: @"%d-G.png",j]);
-    }
-    
 
+        }
+        else
+        {
+
+            for (NSMutableDictionary *tempArr in _myArr_S)
+            {
+
+                int roadNum = [[tempArr objectForKey:@"RoadNo"]intValue ];
+                int speed = [[tempArr objectForKey:@"Speed"] intValue];
+                UIImageView *tmpImage = (UIImageView *)[self.UIView_forMap viewWithTag:300 +roadNum];
+                
+                
+                int flag=0;
+                if(speed<40)    flag =3;
+                else if (speed <60) flag =2;
+                else if (speed <80) flag =1;
+                else flag =0;
+                
+                switch (flag)
+                {
+                    case 0:
+                        [tmpImage setImage:[UIImage imageNamed:[NSString stringWithFormat: @"%d-G.png",roadNum]]];
+                        break;
+                    case 1:
+                        [tmpImage setImage:[UIImage imageNamed:[NSString stringWithFormat: @"%d-O.png",roadNum]]];
+                        break;
+                        
+                    case 2:
+                        [tmpImage setImage:[UIImage imageNamed:[NSString stringWithFormat: @"%d-Y.png",roadNum]]];
+                        break;
+                        
+                    case 3:
+                        [tmpImage setImage:[UIImage imageNamed:[NSString stringWithFormat: @"%d-R.png",roadNum]]];
+                        break;
+                        
+                        
+                    default:
+                        break;
+                }
+            }
+                
+        }
+
+    }
+    else
+    {
+        int j;
+        for (j=1; j<30 ; j++)
+        {
+            UIImageView *tmpImage = (UIImageView *)[self.UIView_forMap viewWithTag:300 +j];
+            switch ((int)arc4random()%4)
+            {
+                case 0:
+                    [tmpImage setImage:[UIImage imageNamed:[NSString stringWithFormat: @"%d-G.png",j]]];
+                    break;
+                case 1:
+                    [tmpImage setImage:[UIImage imageNamed:[NSString stringWithFormat: @"%d-O.png",j]]];
+                    break;
+                    
+                case 2:
+                    [tmpImage setImage:[UIImage imageNamed:[NSString stringWithFormat: @"%d-Y.png",j]]];
+                    break;
+                    
+                case 3:
+                    [tmpImage setImage:[UIImage imageNamed:[NSString stringWithFormat: @"%d-R.png",j]]];
+                    break;
+                    
+                    
+                default:
+                    break;
+            }
+            // NSLog(@"%@",[NSString stringWithFormat: @"%d-G.png",j]);
+        }
+        
+    }
 }
 @end

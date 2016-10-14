@@ -28,6 +28,18 @@
     _routingTableView.delegate=self;
     _routingTableView.dataSource=self;
 
+    
+    NSError *error;
+    NSString *url_string = [NSString stringWithFormat: @"http://210.65.139.94/api/getTravelTime.php"];
+    NSData *data = [NSData dataWithContentsOfURL: [NSURL URLWithString:url_string]];
+    NSMutableArray *jsonArr = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+    _myArr_N = jsonArr;
+    
+    NSString *url_string2 = [NSString stringWithFormat: @"http://210.65.139.94/api/getTravelTime2.php"];
+    NSData *data2 = [NSData dataWithContentsOfURL: [NSURL URLWithString:url_string2]];
+    NSMutableArray *jsonArr2 = [NSJSONSerialization JSONObjectWithData:data2 options:kNilOptions error:&error];
+    _myArr_S = jsonArr2;
+
 }
 
 - (void)didReceiveMemoryWarning {
