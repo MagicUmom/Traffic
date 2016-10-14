@@ -15,6 +15,8 @@
 
 @property (strong, nonatomic) NSMutableArray *myArr_N;
 @property (strong, nonatomic) NSMutableArray *myArr_S;
+@property (strong, nonatomic) NSMutableDictionary *myDic_N;
+@property (strong, nonatomic) NSMutableDictionary *myDic_S;
 
 
 - (IBAction)btn_goNorth:(id)sender;

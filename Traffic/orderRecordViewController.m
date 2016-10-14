@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _myWebView.scalesPageToFit = YES;
-    NSURL *url = [NSURL URLWithString:@"http://125.227.64.113:8084/2.html"];
+    NSURL *url = [NSURL URLWithString:@"http://125.227.64.113:8084/tmp/2.html"];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
     [_myWebView loadRequest:requestObj];
 

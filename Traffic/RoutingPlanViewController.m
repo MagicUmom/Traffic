@@ -39,7 +39,10 @@
     NSData *data2 = [NSData dataWithContentsOfURL: [NSURL URLWithString:url_string2]];
     NSMutableArray *jsonArr2 = [NSJSONSerialization JSONObjectWithData:data2 options:kNilOptions error:&error];
     _myArr_S = jsonArr2;
-
+    
+    _tempArr = [[NSMutableArray alloc ]initWithObjects:@"47",@"50",@"51",@"60",@"63",@"68",@"69",@"73",@"80",@"88", nil];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -63,6 +66,20 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+
+- (IBAction)btn_routing_goN:(id)sender
+{
+    is_N = YES;
+    [_routingTableView reloadData];
+}
+
+- (IBAction)btn_routing_goS:(id)sender
+{
+    is_N = NO;
+    [_routingTableView reloadData];
+}
+
+
 #pragma mark - tableview delegate
 /*
  - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -77,7 +94,7 @@
     if(is_N)
         return 10;
     else
-        return 5;
+        return 2;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -90,27 +107,21 @@
 {
 
     routingTableViewCell *cell = (routingTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"MyCellIdentifier"];
-        cell.routingNum.text = [NSString stringWithFormat:@"%d",(int)indexPath.row+1];
+    cell.routingNum.text = [NSString stringWithFormat:@"%d",(int)indexPath.row+1];
+    cell.routingTime.text = [NSString stringWithFormat:@"旅行時間:%@分鐘",[_tempArr objectAtIndex:(int)indexPath.row]] ;
     if(is_N)
     {
         [cell.routingImage setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%d_N",(int)indexPath.row+1]]];
     }
     else
     {
-        [cell.routingImage setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%d_S",(int)indexPath.row+1]]];
+        if ((int)indexPath.row == 1) {
+            [cell.routingImage setImage:[UIImage imageNamed:@"1_S"]];
+        }else
+            [cell.routingImage setImage:[UIImage imageNamed:@"5_S"]];
     }
     return cell;
 }
 
-- (IBAction)btn_routing_goN:(id)sender
-{
-    is_N = YES;
-    [_routingTableView reloadData];
-}
 
-- (IBAction)btn_routing_goS:(id)sender
-{
-    is_N = NO;
-    [_routingTableView reloadData];
-}
 @end

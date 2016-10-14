@@ -11,6 +11,8 @@
 @interface PublishViewController ()
 {
     bool N_S ;
+    NSString *Hour;
+    NSString *Min;
 }
 
 @end
@@ -24,7 +26,17 @@
     [_publishTable setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     _publishTable.allowsSelection = NO;
     _publishTable.delegate = self;
-    _publishTable.dataSource = self ; 
+    _publishTable.dataSource = self ;
+    
+    
+    NSDate *date = [NSDate date];
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"HH"];
+    Hour = [formatter stringFromDate:date];
+    NSLog(@"Hour: %@",Hour);
+    [formatter setDateFormat:@"mm"];
+    Min = [formatter stringFromDate:date];
+    NSLog(@"Hour: %@",Min);
 
     // Do any additional setup after loading the view.
 }
@@ -91,8 +103,16 @@
 {
     
     publishCell *cell = (publishCell *)[tableView dequeueReusableCellWithIdentifier:@"MyCellIdentifier"];
-    cell.label_depart.text = [NSString stringWithFormat:@"%d : %02d",15,(unsigned)arc4random()%30];
-    cell.label_arrive.text = [NSString stringWithFormat:@"%d : %02d",17,(unsigned)arc4random()%30+29];
+    if(indexPath.row <3)
+    {
+        cell.label_depart.text = [NSString stringWithFormat:@"%@ : %02d",Hour,(unsigned)arc4random()%30];
+        cell.label_arrive.text = [NSString stringWithFormat:@"%d : %02d",[Hour intValue]+1,(unsigned)arc4random()%30+29];
+    }
+    else
+    {
+        cell.label_depart.text = [NSString stringWithFormat:@"%d : %02d",[Hour intValue]+1,(unsigned)arc4random()%30];
+        cell.label_arrive.text = [NSString stringWithFormat:@"%d : %02d",[Hour intValue]+2,(unsigned)arc4random()%30+29];
+    }
     return cell;
 }
 

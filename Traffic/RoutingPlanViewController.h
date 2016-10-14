@@ -17,5 +17,8 @@
 
 @property (strong, nonatomic) NSMutableArray *myArr_N;
 @property (strong, nonatomic) NSMutableArray *myArr_S;
+@property (strong, nonatomic) NSMutableArray *tempArr;
+
+
 
 @end
